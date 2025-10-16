@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Penerapan HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #333;
+        }
+        .content-title {
+            color: #1a73e8; /* Warna biru */
+            font-size: 1.5em;
+            margin-top: 0;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Styling untuk Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+        tfoot td {
+            font-weight: bold;
+            text-align: right;
+            background-color: #f2f2f2;
+        }
+
+        dl {
+            margin-top: 10px;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .center-image {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .caption {
+            font-style: italic;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="header">
+        <h1>Mahasiswa Sistem Informasi</h1>
+        <p>Jago IT • Suka Koding • Berkarakter 🌱</p>
+    </div>
+
+    <div class="card">
+        <h2 class="content-title">🖼️ HTML Images</h2>
+        <p>Tag &lt;img&gt; digunakan untuk menampilkan gambar + dijadikan tautan. Contohnya:</p>
+        
+        <div class="center-image">
+            <a href="https://google.com" target="_blank">
+                <img src="https://exampllee.vercel.app/assets/F06.jpg" style="max-width: 100%; height: auto;">
+            </a>
+        </div>
+        <p>Contoh gambar animasi (GIF):</p>
+        
+        <div class="center-image">
+            <img src="https://exampllee.vercel.app/assets/G07.gif" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <p>Dan berikut penerapan &lt;picture&gt; element:</p>
+        <div class="center-image">
+            <picture>
+                <img src="https://exampllee.vercel.app/assets/F14.jpg" style="max-width: 100%; height: auto; border-radius: 5px;">
+            </picture>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2 class="content-title">🗺️ Image Map</h2>
+        <p>Kita bisa membuat gambar yang memiliki area klik berbeda-beda:</p>
+        
+        <div class="center-image">
+            <img src="https://exampllee.vercel.app/assets/F16.jpg" alt="Laptop dan cangkir kopi di atas meja kayu" usemap="#workmap" style="max-width: 100%; height: auto;">
+        </div>
+        
+        <map name="workmap">
+            <area shape="rect" coords="50, 50, 500, 350" alt="Komputer" href="komputer.html">
+            <area shape="circle" coords="650, 380, 80" alt="Cangkir Kopi" href="kopi.html">
+        </map>
+        
+        <p class="caption">Coba klik bagian komputer atau cangkir kopi di gambar di atas!</p>
+    </div>
+
+    <div class="card">
+        <h2 class="content-title">📊 HTML Tables</h2>
+        <p>Tabel digunakan untuk menampilkan data baris dan kolom.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Data Mahasiswa SI</th>
+                </tr>
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Minat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Yuliana</td>
+                    <td>0110125104</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>Yuli</td>
+                    <td>0110125104</td>
+                    <td>UI/UX Design</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Jumlah Mahasiswa Aktif: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2 class="content-title">📋 HTML Lists</h2>
+        
+        <h3>Unordered List (daftar tanpa urutan):</h3>
+        <ul>
+            <li>Analisis Sistem</li>
+            <li>Desain Database</li>
+            <li>Pemrograman Web</li>
+        </ul>
+        
+        <hr>
+        
+        <h3>Ordered List (daftar berurutan):</h3>
+        <ol>
+            <li>Belajar HTML</li>
+            <li>Belajar CSS</li>
+            <li>Belajar JavaScript</li>
+        </ol>
+        
+        <hr>
+        
+        <h3>Description List:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Bahasa untuk membuat struktur web.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Bahasa untuk memperindah tampilan web.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>Bahasa untuk membuat web menjadi interaktif.</dd>
+        </dl>
+    </div>
+
+    <div style="text-align: center; padding: 10px; font-size: 0.8em; color: #666;">
+        © 2025 STT Nurul Fikri — Jago IT, Berkarakter
+    </div>
+
+</body>
+</html>
