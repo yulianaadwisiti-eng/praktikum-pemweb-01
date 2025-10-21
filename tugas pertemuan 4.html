@@ -1,0 +1,269 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+ <style>
+ body {
+     font-family: 'Segoe UI', Arial, sans-serif;
+     margin: 0;
+     background-color: #fcfeff;
+     color: #222;
+ }
+
+ /* HEADER */
+ header {
+     background-color: #355485;
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+ }
+
+ header h1 {
+     margin: 0;
+     font-size: 28px;
+ }
+
+ /* NAV */
+ nav {
+     background-color: #4f90c6;
+     text-align: center;
+     padding: 10px 0;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+     margin: 0 15px;
+     font-weight: bold;
+ }
+
+ nav a:hover {
+     text-decoration: underline;
+ }
+
+ /* LAYOUT */
+ .container {
+     width: 90%;
+     max-width: 1100px;
+     margin: 20px auto;
+     overflow: auto;
+ }
+
+ section {
+     float: left;
+     width: 68%;
+     background-color: white;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     padding: 16px;
+     box-sizing: border-box;
+ }
+
+ aside {
+     float: right;
+     width: 28%;
+     background-color: #cbdde9;
+     border: 1px solid #bbb;
+     border-radius: 8px;
+     padding: 16px;
+     box-sizing: border-box;
+ }
+
+ h2 {
+     color: #355485;
+     margin-top: 0;
+ }
+
+ article img {
+     width: 100%;
+     border-radius: 6px;
+     margin-bottom: 10px;
+ }
+
+ /* TABEL DATA */
+ table {
+     border-collapse: collapse;
+     width: 100%;
+     margin: 12px 0;
+ }
+
+ th,
+ td {
+     border: 1px solid #ccc;
+     padding: 8px;
+     text-align: left;
+ }
+
+ th {
+     background-color: #f1f5f9;
+ }
+
+ /* IFRAME */
+ iframe {
+     width: 100%;
+     height: 250px;
+     border: 1px solid #999;
+     border-radius: 6px;
+ }
+
+ /* FOOTER */
+ footer {
+     clear: both;
+     background-color: #355485;
+     color: white;
+     text-align: center;
+     padding: 14px 0;
+     margin-top: 20px;
+ }
+
+ footer a {
+     color: #cbdde9;
+     text-decoration: none;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* RESPONSIVE SEDIKIT */
+ @media (max-width: 768px) {
+
+     section,
+     aside {
+         float: none;
+         width: 100%;
+     }
+ }
+
+ </style>
+<body>
+   <header id="Kembali ke atas">
+  <h1>Portal Yuli — Berita Koding Lucu Tapi Keren 😎💻</h1>
+  <p>"Di mana bug bukan musuh, tapi guru kehidupan."</p>
+  <nav>
+    <a href="#berita">Berita Utama</a>
+        <a href="#fakta unik">Fakta Unik</a>
+    <a href="#vidio&iframe">Vidio & Iframe</a>
+    <a href="#kotak redaksi">Kotak Redaksi</a>
+  </nav>
+  </header>
+   <main style="padding:20px">
+    <div id="berita">
+      <section id="Berita Utama">
+        <h2>Yuli Tertangkap Basah Ngoding Jam 3 Pagi Demi Push ke GitHub</h2>
+        <img src="https://exampllee.vercel.app/assets/G07.gif"; alt="ini gambar"; style="border-radius:8px; width:325px; height:200px";>
+        <p><b>Jakarta, Portal Yuli</b> — Warga sekitar dikejutkan dengan suara ketikan keyboard yang tak kunjung berhenti. Setelah diselidiki, ternyata sumber suara berasal dari kamar Yuli yang sedang men-deploy project-nya ke Vercel.
+        <p>"Aku cuma mau mastiin web-nya responsif sebelum tidur," ujar Yuli sambil menyeruput susu coklat dingin yang udah cair dari jam 10.</p>
+        <p>Menurut pengakuan saksi, Yuli sudah tiga malam tidak tidur gara gara memperbaiki<code> vite-plugin-pwa missing </code>. Namun akhirnya, project berhasil jalan dan langsung mendapat 5⭐ di Git-hub dari teman satu kos-nya.</p>
+        
+      <h3>Fakta Koding Yuli :</h3>
+        <ul>
+          <li>Suka debugging sambil dengerin musik pop 🎧</li>
+          <li>Pernah typo <i>consola.log</i></li>
+          <li>Setiap eror di anggap "ujian cinta terhadap sintaks</li>
+        </ul>
+        
+        <p><h3>Top 3 Error Paling Sering Ditemui : </h3></p>
+        <ol>
+          <li>Missing semicolone (;) setelah jam dua pagi</li>
+          <li>Path image gak kebaca di deploy</li>
+          <li>"Cannot read property'undefined' of undefined" - klasik!</li>
+          </ol>
+          
+  <h3>Daftar Konsumsi Lembur Yuli :</h3>
+   <table>
+   <tr>
+      <th>No</th>
+      <th>Menu</th>
+      <th>Jam Konsumsi</th>
+      <th>Status</th>
+   </tr>
+   <tr>
+       <td>1</td>
+       <td>Susu Coklat</td>
+       <td>22:00</td>
+       <td>Habis</td>
+       
+   </tr>
+      <tr>
+       <td>2</td>
+       <td>Mie goreng</td>
+       <td>00:45</td>
+       <td>Pending (kegigit error)</td>
+          <tr>
+       <td>3</td>
+       <td>Chiki</td>
+       <td>02:00</td>
+       <td>Belum disentuh</td>
+     </tr>
+     </table>
+ <p> Dan inilah Motto hidupnya :</p>
+ <div id="motto">
+       <p><b>Motto?</b></p>
+       <blockquote style="border-left: #355485 solid 5px; background-color: #4884b527;">
+       <div style="padding:5px;">
+         impianmu adalah kenyataan yang belum terjadi, buatlah menjadi kenyataan .
+     </div>
+     </blockquote>
+     </div>
+        </p>
+        <div id="vidio&iframe">
+        <section id="Video & Iframe">
+     <h2>Belajar HTML Langsung Dari Sumbernya</h2>
+     <p>Berikut cuplikan situs referensi belajar favorit Yuli :</p>
+     <iframe class="frame" src="https://www.petanikode.com/" title="contoh iframe"></iframe> 
+        </div>
+        </section>
+        </section>
+        </div>
+        <aside {float: right; width: 23%; background-color: #cbdde9; border; 1px solid #bbb; border-radius: 8px; padding: 16px; box-sizing: border-box; margin-right: 30px margin-top: 20px;}
+      <div id="fakta unik"> 
+        <section id="Fakta Unik"
+     <h2>Fakta Unik Tentang Yuli</h2> 
+     <ul>
+        <li> Ngoding pakai mode gelap bahkan di siang bolong </li>
+        <li> Punya 7 repository bernama <em>final-final-v3</em></li>
+         <li> Pernah rename folder jadi "fix-beneran-terakhir". </li>
+      </ul>
+      </section>
+      <h3>Jadwal Kegiatan Harian</h3> 
+       
+       <table>
+         <tr>
+           <th>Waktu</th>
+           <th>Kegiatan</th>
+         </tr>
+         <tr>
+           <th>09:00</th>
+           <th>Kelas Pemrograman Web</th>
+         </tr>
+         <tr>
+           <td>13:00</td>
+           <td>Ngopi sambil baca dokumentasi</td>
+         </tr>
+         <tr>
+           <td>21:00</td> 
+           <td>Debug sampai lupa waktu</td>
+         </tr>
+       </table>
+</div>
+</main>
+  <div id="kotak redaksi"
+  <section id="Kontak Redaksi">
+   <footer id="Kontak Redaksi">
+    Hubungi redaksi: <a href="malito: yulianaadwisiti@gmail.com"</a>
+   <br>
+   <p><a href="Kembali Keatas"> ⬆️Kembali Ke atas </a></p>
+      <p>© 2025 Portal Yuli-Semua bug milik bersama 🐞</p>
+     </footer> 
+     </div>
+     </section>
+</body>
+</html>
+  
+</body>
+</html>
