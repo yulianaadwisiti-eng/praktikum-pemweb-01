@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 25px 35px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Class Registration Form</h2>
+    <p>Please fill out the form below to register for our class</p>
+
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Yuliana" required>
+        <input type="text" placeholder="Yuli" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" placeholder="yulianaadwisiti@gmail.com" required>
+        <input type="tel" placeholder="085780141954" required>
+      </div>
+
+      <label>Class Level</label>
+      <select required>
+        <option value="">Select your class level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <p style="font-size: 12px; color:#666; margin-top:5px;">Please choose the appropriate level for your experience</p>
+
+      <label>Class Days</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Monday</label>
+        <label><input type="checkbox"> Tuesday</label>
+        <label><input type="checkbox"> Wednesday</label>
+        <label><input type="checkbox"> Thursday</label>
+        <label><input type="checkbox"> Friday</label>
+        <label><input type="checkbox"> Saturday</label>
+      </div>
+
+      <div class="terms">
+        <label><input type="checkbox" required> I agree to the terms and conditions of the class registration</label>
+      </div>
+
+      <button type="submit">Register Now!</button>
+    </form>
+  </div>
+
+</body>
+</html>
