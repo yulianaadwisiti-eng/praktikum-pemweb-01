@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Event Registration Form</h2>
+    <p>Please fill out the form below to register for the event.</p>
+
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <div>
+          <label>First Name</label>
+          <input type="text" placeholder="Yuliana" required>
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" placeholder="Yuli" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <label>Email Address</label>
+      <input type="email" placeholder="yulianaadwisiti@gmail.com" required>
+
+      <!-- Phone -->
+      <label>Phone Number</label>
+      <input type="tel" placeholder="085780141954" required>
+
+      <!-- Country and DOB -->
+      <div class="form-group">
+        <div>
+          <label>Country</label>
+          <select required>
+            <option value="">Select Country</option>
+            <option>Indonesia</option>
+            <option>Inggris</option>
+            <option>Jepang</option>
+            <option>Australia</option>
+          </select>
+        </div>
+        <div>
+          <label>Date of Birth</label>
+          <input type="date" required>
+        </div>
+      </div>
+
+      <!-- T-shirt size -->
+      <label>T-Shirt Size</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Small</label>
+        <label><input type="checkbox"> Medium</label>
+        <label><input type="checkbox"> Large</label>
+        <label><input type="checkbox"> Extra Large</label>
+      </div>
+
+      <!-- Emergency contact -->
+      <div class="section-title">Emergency Contact Information</div>
+
+      <label>Emergency Contact Name</label>
+      <input type="text" placeholder="Yuliana Dwi" required>
+
+      <label>Emergency Contact Phone Number</label>
+      <input type="tel" placeholder="085780141954" required>
+
+      <!-- Terms -->
+      <div class="terms">
+        <label><input type="checkbox" required> I agree to the terms and conditions of this event.</label>
+      </div>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
